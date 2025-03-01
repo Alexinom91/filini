@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "init_fil.h"
+#include "set_fil.h"
 
 //base types used in the __struct_fil
 typedef unsigned long lent; //array per type
