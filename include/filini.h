@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include "v_fil.h"
+#include "init_fil.h"
 
-typedef _baseFil fil[1]; //variabile
-
+typedef v_fil fil[1]; //variabile
 
 
 #endif
