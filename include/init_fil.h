@@ -6,6 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-void init_fil();
+void alloc_fil();
 
 #endif
