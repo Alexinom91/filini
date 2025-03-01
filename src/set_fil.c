@@ -11,6 +11,6 @@ void set_fil_d(ptr_fil var, double input)
         var->sign=ZERO;
     
     
-    
+    //need to understand beter how all work
 
 }
