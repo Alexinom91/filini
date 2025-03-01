@@ -1,11 +1,9 @@
-
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
 #include "init_fil.h"
-void alloc_fil()
-{
 
+void init_fil(ptr_fil var, size_t length)
+{   var->sign=EMPTY;
+    var->length=length;
+    size_t length_bytes = (length + 7) / 8;
+    var->digits=(char*)malloc(length_bytes);
 }
+

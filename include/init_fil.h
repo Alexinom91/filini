@@ -5,7 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "filini.h"
 
-void alloc_fil();
+void init_fil(ptr_fil var, size_t length);
 
 #endif
