@@ -20,6 +20,14 @@ typedef enum
     ZERO
 }sign_t;
 
+typedef enum
+{
+    R_DOWN,  //round down "ITA: arrotonda per difetto"
+    R_UP,    //round up "ITA: arrotonda per eccesso"
+    R_TO_ZERO//round to zero: "arrotondamento per troncamento"
+}round;
+
+
 typedef struct  //main structor of our var
 {
     sign_t sign;    // sign of the variable
