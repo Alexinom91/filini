@@ -3,12 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 #include "init_fil.h"
 #include "set_fil.h"
 
 //base types used in the __struct_fil
 typedef unsigned long lent; //array per type
-
+typedef int expo;
 //I choose to do like that because ive a close amount of choise
 //typedef int sign_t;
 
@@ -32,6 +33,7 @@ typedef struct  //main structor of our var
 {
     sign_t sign;    // sign of the variable
     size_t length;    //lenght of the array
+    expo expoent;
     lent *digits;     // dynamic array
 }__struct_fil;
 

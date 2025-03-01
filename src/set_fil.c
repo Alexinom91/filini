@@ -2,7 +2,7 @@
 
 
 void set_fil_d(ptr_fil var, double input, const round ROUND )
-{
+{   
     if(input>(double)0)
         var->sign=POSITIVE;
     if(input<(double)0)
@@ -10,6 +10,7 @@ void set_fil_d(ptr_fil var, double input, const round ROUND )
     if(input==(double)0)
         var->sign=ZERO;
     
+    //need to understand beter how all work
     if(ROUND==R_DOWN)
     {
         //write a function to do it
@@ -22,6 +23,8 @@ void set_fil_d(ptr_fil var, double input, const round ROUND )
     {
         //write a function to do it
     }
-    //need to understand beter how all work
+    
 
+    //divide the number from the exponent
+    var->digits=flexp(input, var->expoent);
 }
