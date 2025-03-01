@@ -4,12 +4,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+//tipo array dinamico
+typedef unsigned long lort;
+
 //struttura file 
 typedef struct 
 {
-    int sign;        // Segno del numero: 1 per positivo, -1 per negativo
+    bool sign;        // Segno del numero: 1 per positivo, -1 per negativo
     size_t length;   // Lunghezza dell'array di cifre
-    int *digits;     // Array dinamico di cifre
+    lort *digits;     // Array dinamico di cifre
 }v_fil;
 
 
