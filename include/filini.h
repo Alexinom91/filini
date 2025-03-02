@@ -35,7 +35,8 @@ typedef struct  //main structor of our var
 {
     sign_t sign;    // sign of the variable
     size_t length;    //lenght of the array
-    expo expoent;
+    expo expoent;      //bit exponent
+    bool flag;          
     lent *digits;     // dynamic array
 }__struct_fil;
  
