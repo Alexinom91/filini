@@ -2,7 +2,7 @@
 
 void round_up_fil(ptr_fil *var)
 {
-    if(check_init_fil(&var)==false)
+    if(check_init_fil_2(&var)==false)
     {
         
             //need to do the round up
