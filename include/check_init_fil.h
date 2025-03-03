@@ -3,6 +3,6 @@
 
 #include "filini.h"
 
-bool check_init_fil(srcptr_fil *var);
+bool check_init_fil(ptr_ptr_fil var);
 
 #endif

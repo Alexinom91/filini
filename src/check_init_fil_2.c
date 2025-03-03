@@ -1,9 +1,16 @@
-#include "check_init_fil_2.h"
-void check_init_fil_2(srcptr_fil **var)
+#include "../include/check_init_fil_2.h"
+#include "../include/filini.h"
+#include <stdbool.h>
+bool check_init_fil_2(ptr_ptr_ptr_fil var)
 {
     if((**var)->digits==NULL)
     {
         #warning    "Warning, the size of the variable isn't intialized" 
+        return true;
+    }
+    else
+    {
+        return false;
     }
     
 }

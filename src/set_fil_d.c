@@ -20,7 +20,7 @@ void set_fil_d(ptr_fil var, double input, const round_fil_type ROUND )
 
         
         
-        var->digits=flexp(input, var->expoent);
+        var->digits=frexp(input, var->expoent);
     
     
         
