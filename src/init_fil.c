@@ -4,7 +4,8 @@ void init_fil(ptr_fil var, size_t length)
 {   var->sign=EMPTY;
     var->length=length;
     var->flag=false;
-    size_t length_bytes = (length + 7) / 8;
-    var->digits=(char*)calloc(length_bytes, sizeof(char));
+    int  word_size = sizeof(lent) * 8;
+    int num_words=(length + word_size - 1) / word_size;
+    var->digits=(lent *)calloc(num_words, sizeof(lent));
 }
 

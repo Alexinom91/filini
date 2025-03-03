@@ -31,27 +31,17 @@ void set_fil_d(ptr_fil var, double input, const round ROUND )
             {
                 case R_DOWN:
                     //write a function to do it
-                    var->flag=(var->expoent)>(length_bytes);
+                    round_down_fil(&var);
                     break;
                 case R_UP:
                     //arrotondamento per eccesso
                     
-                    for (size_t i = var->length; i > 0; i--) {
-                        if (var->digits[i - 1] != ~0UL) { // Se non è tutto 1
-                            var->digits[i - 1] += 1;
-                            break;
-                        } else {
-                            var->digits[i - 1] = 0; // Propaga il riporto
-                        }
-                    }
-                    
-                   
-                    var->flag=(var->expoent)>(length_bytes);
+                    round_up_fil( &var);
                     break;
                 case R_TO_ZERO:
                     //troncamento
+                    //non devo fare nulla
                     
-                    var->flag=(var->expoent)>(length_bytes);
                     break;
                 default:
                     #warning "Warning, the round is not valid"
