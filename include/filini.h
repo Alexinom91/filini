@@ -34,7 +34,7 @@ typedef enum
     R_DOWN,  //round down "ITA: arrotonda per difetto"
     R_UP,    //round up "ITA: arrotonda per eccesso"
     R_TO_ZERO//round to zero "ITA: arrotondamento per troncamento"
-}round;
+}round_fil_type;
 
 
 typedef struct  //main structor of our var
@@ -52,6 +52,8 @@ typedef struct  //main structor of our var
 typedef __struct_fil fil[1];    //main type to use => its in an array with an only element to be easier  to give to the functions
 //------------------------------------
 typedef __struct_fil *ptr_fil;  //pointer to the struct
+typedef __struct_fil **ptr_ptr_fil;  //pointer to the struct
+typedef __struct_fil **ptr_ptr_ptr_fil;  //pointer to the struct
 typedef const __struct_fil *srcptr_fil; //pointer to the struct that is useful in the functions
 
 #endif
