@@ -10,13 +10,7 @@
 #include <assert.h>
 #include <stdint.h>
 #include <stddef.h>
-#include "round_up_fil.h"
-#include "init_fil.h"
-#include "set_fil_d.h"
-#include "set_fil.h"
-#include "check_init_fil.h"
-#include "check_init_fil_2.h"
-#include "round_down_fil.h"
+
 
 //base types used in the __struct_fil
 typedef unsigned long lent; //array per type
@@ -59,4 +53,11 @@ typedef ptr_fil *ptr_ptr_fil;  //pointer to the struct
 typedef ptr_ptr_fil *ptr_ptr_ptr_fil;  //pointer to the struct
 typedef const __struct_fil *srcptr_fil; //pointer to the struct that is useful in the functions
 
+#include "round_up_fil.h"
+#include "init_fil.h"
+#include "set_fil_d.h"
+#include "set_fil.h"
+#include "check_init_fil.h"
+#include "check_init_fil_2.h"
+#include "round_down_fil.h"
 #endif

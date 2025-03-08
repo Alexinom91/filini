@@ -4,8 +4,10 @@
 bool check_init_fil_2(ptr_ptr_ptr_fil var)
 {
     if((**var)->digits==NULL)
-    {
-        #warning    "Warning, the size of the variable isn't intialized" 
+    {   
+        
+        fprintf(stderr, "the digits of the variable isn't intialized\n");
+        
         return true;
     }
     else
